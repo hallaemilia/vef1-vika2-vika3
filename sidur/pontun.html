@@ -27,54 +27,56 @@
             </ul>
         </nav>
     </header>
-    <form id="form" action="/skraning" method="post">
-        <h2>Panta borð</h2>
-        <label for="arrival-date">Hvaða dag viltu koma?</label>
-            <input type="date" id="arrival-date" name="arrival-date" required>
-        <label for="arrival-time">Klukkan hvað viltu koma?</label>
-            <input type="time" id="arrival-time" name="arrival-time" min="09:00" max="22:00" required>
-
-        <label for="number-of-guests">Hve mörg?</label>
-            <input type="number" id="number-of-guests" name="number-of-guests" min="1" max="10">
-
-        <label for="special-request">Viltu taka eitthvað fram?</label>
-            <textarea id="special-request" name="special-request"></textarea>
-
-        <h2>Panta mat</h2>
-        <label for="selected-dish">Réttur</label>
-            <select id="selected-dish" name="selected-dish">
-                <option value="lasagna">Lasagna</option>
-                <option value="risotto">Sveppa risotto</option>
-                <option value="fersktpasta">Ferskt pasta með pestó</option>
-                <option value="quesadilla">Quesadilla</option>
-                <option value="falafelmedhummus">Falafel með hummus</option>
-                <option value="supadags">Súpa dagsins</option>
-                <option value="kryddkartoflur">Kryddaðar sætkartöflur</option>
-                <option value="hamborgari">Hamborgari</option>
-                <option value="pizza">Pizza</option>
-            </select>
-
-        <label for="delivery-address">Heimilisfang</label>
-            <input type="text" id="delivery-address" name="delivery-address">
-
-        <h2>Þínar upplýsingar</h2>
-        <label for="name">Nafn</label>
-            <input type="text" id="name" name="name" required>
-
-        <label for="email">Netfang</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
-
-        <label for="phone">Sími</label>
-            <input type="tel" id="phone" name="phone" placeholder="000-0000" required>
-
-        <label for="terms-agreement">
-            <input type="checkbox" id="terms-agreement" name="terms-agreement" required>
-            Ég samþykki skilmála Veitingastaðsins
-        </label>
-
-        <input type="submit" value="Panta">
-    </form>
-    <a href="/index.html">Aftur á forsíðu</a>
+    <main>
+        <form id="form" action="/skraning" method="post">
+            <h2>Panta borð</h2>
+            <label for="arrival-date">Hvaða dag viltu koma?</label>
+                <input type="date" id="arrival-date" name="arrival-date" required>
+            <label for="arrival-time">Klukkan hvað viltu koma?</label>
+                <input type="time" id="arrival-time" name="arrival-time" min="09:00" max="22:00" required>
+    
+            <label for="number-of-guests">Hve mörg?</label>
+                <input type="number" id="number-of-guests" name="number-of-guests" min="1" max="10">
+    
+            <label for="special-request">Viltu taka eitthvað fram?</label>
+                <textarea id="special-request" name="special-request"></textarea>
+    
+            <h2>Panta mat</h2>
+            <label for="selected-dish">Réttur</label>
+                <select id="selected-dish" name="selected-dish">
+                    <option value="lasagna">Lasagna</option>
+                    <option value="risotto">Sveppa risotto</option>
+                    <option value="fersktpasta">Ferskt pasta með pestó</option>
+                    <option value="quesadilla">Quesadilla</option>
+                    <option value="falafelmedhummus">Falafel með hummus</option>
+                    <option value="supadags">Súpa dagsins</option>
+                    <option value="kryddkartoflur">Kryddaðar sætkartöflur</option>
+                    <option value="hamborgari">Hamborgari</option>
+                    <option value="pizza">Pizza</option>
+                </select>
+    
+            <label for="delivery-address">Heimilisfang</label>
+                <input type="text" id="delivery-address" name="delivery-address">
+    
+            <h2>Þínar upplýsingar</h2>
+            <label for="name">Nafn</label>
+                <input type="text" id="name" name="name" required>
+    
+            <label for="email">Netfang</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+    
+            <label for="phone">Sími</label>
+                <input type="tel" id="phone" name="phone" placeholder="000-0000" required>
+    
+            <label for="terms-agreement">
+                <input type="checkbox" id="terms-agreement" name="terms-agreement" required>
+                Ég samþykki skilmála Veitingastaðsins
+            </label>
+    
+            <input type="submit" value="Panta">
+        </form>
+        <a href="/index.html">Aftur á forsíðu</a>
+    </main>
     <footer>
         <div>
             <h3>Opnunartími</h3>
