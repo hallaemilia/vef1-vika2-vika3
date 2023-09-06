@@ -22,69 +22,96 @@
         <nav>
             <ul>
                 <li><a href="/index.html">Forsíða</a></li>
-                <li><a href="/sidur/um.html">Um veitingarstaðinn</a></li>
+                <li><a href="/sidur/um.html">Um Veitingastaðinn</a></li>
                 <li><a href="/sidur/matsedill.html">Matseðill</a></li>
+                <li><a href="/sidur/pontun.html">Pöntunarsíða</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <form id="form" action="/skraning" method="post">
-            <h2>Panta borð</h2>
-            <label for="arrival-date">Hvaða dag viltu koma?</label>
-                <input type="date" id="arrival-date" name="arrival-date" required>
-            <label for="arrival-time">Klukkan hvað viltu koma?</label>
-                <input type="time" id="arrival-time" name="arrival-time" min="09:00" max="22:00" required>
+
+            <div>
+                <h2>Panta borð</h2>
+                <label for="arrival-timi">Hvenær viltu koma?</label>
+                <input type="datetime-local" name="arrival-timi" id="arrival-timi">
+                
+                <label for="number-of-guests">Hve mörg?</label>
+                    <input type="number" id="number-of-guests" name="number-of-guests" min="1" max="10" value="1">
+        
+                <label for="special-request">Viltu taka eitthvað fram?</label>
+                    <textarea id="special-request" name="special-request"></textarea>
+        
+            </div>
+
+            <div>
+                <h2>Panta mat</h2>
+                <label for="selected-dish1">Réttur #1</label>
+                <input type="text" id="selected-dish1" name="selected-dish1">
     
-            <label for="number-of-guests">Hve mörg?</label>
-                <input type="number" id="number-of-guests" name="number-of-guests" min="1" max="10">
+                <label for="selected-dish2">Réttur #2</label>
+                <input type="text" id="selected-dish2" name="selected-dish2">
     
-            <label for="special-request">Viltu taka eitthvað fram?</label>
-                <textarea id="special-request" name="special-request"></textarea>
+                <label for="selected-dish3">Réttur #3</label>
+                <input type="text" id="selected-dish3" name="selected-dish3">
     
-            <h2>Panta mat</h2>
-            <label for="selected-dish">Réttur</label>
-                <select id="selected-dish" name="selected-dish">
-                    <option value="lasagna">Lasagna</option>
-                    <option value="risotto">Sveppa risotto</option>
-                    <option value="fersktpasta">Ferskt pasta með pestó</option>
-                    <option value="quesadilla">Quesadilla</option>
-                    <option value="falafelmedhummus">Falafel með hummus</option>
-                    <option value="supadags">Súpa dagsins</option>
-                    <option value="kryddkartoflur">Kryddaðar sætkartöflur</option>
-                    <option value="hamborgari">Hamborgari</option>
-                    <option value="pizza">Pizza</option>
-                </select>
+                <label for="selected-dish4">Réttur #4</label>
+                <input type="text" id="selected-dish4" name="selected-dish4">
     
-            <label for="delivery-address">Heimilisfang</label>
-                <input type="text" id="delivery-address" name="delivery-address">
+                <label for="selected-dish5">Réttur #5</label>
+                <input type="text" id="selected-dish5" name="selected-dish5">
     
-            <h2>Þínar upplýsingar</h2>
-            <label for="name">Nafn</label>
-                <input type="text" id="name" name="name" required>
-    
-            <label for="email">Netfang</label>
-                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
-    
-            <label for="phone">Sími</label>
-                <input type="tel" id="phone" name="phone" placeholder="000-0000" required>
-    
-            <label for="terms-agreement">
-                <input type="checkbox" id="terms-agreement" name="terms-agreement" required>
-                Ég samþykki skilmála Veitingastaðsins
-            </label>
-    
-            <input type="submit" value="Panta">
+        
+                <label for="delivery-address">Heimilisfang</label>
+                    <input type="text" id="delivery-address" name="delivery-address">
+        
+            </div>
+
+            <div>
+                <h2>Þínar upplýsingar</h2>
+                <label for="name">Nafn</label>
+                    <input type="text" id="name" name="name" required>
+        
+                <label for="email">Netfang</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+        
+                <label for="phone">Sími</label>
+                    <input type="tel" id="phone" name="phone" placeholder="000-0000" required>
+        
+            </div>
+
+            <div>
+                <h2>Samþykkja og panta</h2>
+                <label for="terms-agreement">
+                    <input type="checkbox" id="terms-agreement" name="terms-agreement" required>
+                    Ég samþykki skilmála Veitingastaðsins
+                </label>
+        
+                <input type="submit" value="Panta">
+            </div>
+
         </form>
-        <a href="/index.html">Aftur á forsíðu</a>
+        <a href="/index.html">Aftur á forsíðu.</a>
     </main>
     <footer>
         <div>
-            <h3>Opnunartími</h3>
-            <p>Mánudaga til fimmtudaga 09:00-18:00 Föstudaga 10:00-22:00 Laugardaga 11:00-22:00 Sunnudaga Lokað</p>
+            <h2>Opnunartími</h2>
+            <h3>Mánudaga til fimmtudaga</h3>
+            <p>09:00-18:00</p>
+            <h3>Föstudaga</h3>
+            <p>10:00-22:00</p>
+            <h3>Laugardaga</h3>
+            <p>11:00-22:00</p>
+            <h3>Sunnudaga</h3>
+            <p>Lokað</p>
         </div>
         <div>
-            <h3>Hér erum við</h3>
-            <p>Veitingastaðurinn ehf. Aðalgata 10 100 Reykjavík Sími 333-4567 veitingastadur@example.org</p>
+            <h2>Hér erum við</h2>
+            <p>Veitingastaðurinn ehf.</p>
+            <p>Aðalgata 10</p>
+            <p>100 Reykjavík</p>
+            <p>Sími 333-4567</p>
+            <p>veitingastadur@example.org</p>
         </div>
     </footer>
 </body>
