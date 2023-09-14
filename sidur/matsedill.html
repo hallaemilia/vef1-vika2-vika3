@@ -7,31 +7,35 @@
     <meta property="og:title" content="Matseðill  - Veitingastaður">
     <meta property="og:description" content="Kynntu þér yndislegu rétti okkar.">
     <meta property="og:image" content="/myndir/sharing.jpg">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <title>Matseðill</title>
 </head>
 <body>
     <header>
         <h1>Matseðill</h1>
         <p>Skoðaðu það sem við höfum upp á að bjóða!</p>
-        <a href="#matur">Beint í efni</a>
-        <nav>
-            <ul>
-                <li><a href="/index.html">Forsíða</a></li>
-                <li><a href="/sidur/um.html">Um Veitingastaðinn</a></li>
-                <li><a href="/sidur/matsedill.html">Matseðill</a></li>
-                <li><a href="/sidur/pontun.html">Pöntunarsíða</a></li>
-            </ul>
-        </nav>
+        <a href="#matur" class="sr-only">Beint í efni</a>
     </header>
-    <main>
+    <nav>
+        <ul class="navtext">
+            <li><a href="/index.html">Forsíða</a></li>
+            <li><a href="/sidur/um.html">Um Veitingastaðinn</a></li>
+            <li><a href="/sidur/matsedill.html" class="selected">Matseðill</a></li>
+            <li><a href="/sidur/pontun.html">Pöntunarsíða</a></li>
+        </ul>
+    </nav>
+    <main class="matur">
         <table>
             <tr>
-                <th>Nr.</th>
-                <th>Heiti</th>
-                <th>Lýsing</th>
-                <th>Verð</th>
+                <th class="title">Nr.</th>
+                <th class="title">Heiti</th>
+                <th class="title">Lýsing</th>
+                <th class="title">Verð</th>
             </tr>
-            <tr>
+            <tr class="litur">
                 <td>1</td>
                 <td>Lasagna</td>
                 <td>Lasagna með fersku salati</td>
@@ -43,7 +47,7 @@
                 <td>Kremkennt risotto með sveppum og fersku grænmeti</td>
                 <td>2.500 kr.-</td>
             </tr>
-            <tr>
+            <tr class="litur">
                 <td>3</td>
                 <td>Ferskt pasta með pestó</td>
                 <td>Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum</td>
@@ -55,7 +59,7 @@
                 <td>Quesadilla með osti og fersku salsa</td>
                 <td>2.100 kr.-</td>
             </tr>
-            <tr>
+            <tr class="litur">
                 <td>5</td>
                 <td>Falafel með hummus</td>
                 <td>Falafel með hummus, pitu og fersku salati</td>
@@ -67,7 +71,7 @@
                 <td>Daglega ný súpa</td>
                 <td>1.850 kr.-</td>
             </tr>
-            <tr>
+            <tr class="litur">
                 <td>7</td>
                 <td>Kryddaðar sætkartöflur</td>
                 <td>Kryddaðar sætkartöflur með vorlauk</td>
@@ -79,35 +83,37 @@
                 <td>Hamborgari með frönskum kartöflum</td>
                 <td>2.500 kr.-</td>
             </tr>
-            <tr>
+            <tr class="litur">
                 <td>9</td>
                 <td>Pizza</td>
                 <td>Klassísk pizza</td>
                 <td>2.000 kr.-</td>
             </tr>
         </table>
-        <a href="/index.html">Aftur á forsíðu.</a>
+        <p class="matedapant"><a href="/index.html">Aftur á forsíðu.</a></p>
     </main>
     <footer>
-        <div>
-            <h2>Opnunartími</h2>
-            <h3>Mánudaga til fimmtudaga</h3>
-            <p>09:00-18:00</p>
-            <h3>Föstudaga</h3>
-            <p>10:00-22:00</p>
-            <h3>Laugardaga</h3>
-            <p>11:00-22:00</p>
-            <h3>Sunnudaga</h3>
-            <p>Lokað</p>
-        </div>
-        <div>
-            <h2>Hér erum við</h2>
-            <p>Veitingastaðurinn ehf.</p>
-            <p>Aðalgata 10</p>
-            <p>100 Reykjavík</p>
-            <p>Sími 333-4567</p>
-            <p>veitingastadur@example.org</p>
-        </div>
+        <h2>Opnunartími</h2>
+        <dl>
+        <dt>Mánudaga til fimmtudaga</dt>
+        <dd class="timi">09:00-18:00</dd>
+        <dt>Föstudaga</dt>
+        <dd class="timi">10:00-22:00</dd>
+        <dt>Laugardaga</dt>
+        <dd class="timi">11:00-22:00</dd>
+        <dt>Sunnudaga</dt>
+        <dd class="timi">Lokað</dd>
+        </dl>
+
+        <h2>Hér erum við</h2>
+        <ul>
+        <li>Veitingastaðurinn ehf.</li>
+        <li>Aðalgata 10</li>
+        <li>100 Reykjavík</li>
+        <li><a class="footer" href="tel:3334567">Sími 333-4567</a></li>
+        <li>
+            <a class="footer" href="mailto:veitingastadur@example.org">veitingastadur@example.org</a>
+        </li></ul>  
     </footer>
 </body>
 </html>

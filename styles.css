@@ -1,0 +1,227 @@
+/* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+  }
+  
+  /* Reiknum stærð á öllum boxum sem border-box */
+  html {
+    box-sizing: border-box;
+  }
+
+  html * {
+    box-sizing: border-box;
+  }
+  /* og látum erfast á allt */
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    font-family: 'Lora', serif;
+  }
+
+  /* ALMENNT */
+
+  h1, h2, h3 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+  }
+
+  
+  a {
+    text-decoration: underline;
+    color: #2f0505;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  #matedapant {
+    text-decoration: underline;
+    color: #2f0505;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+  }
+
+  /* HAUS */
+
+  header {
+    background-color: #2f0505;
+    color: #fff1cf;
+    border-bottom: 8px solid #ffe7ae;
+    padding: 1rem;
+    text-align: center;
+    }
+
+  /* NAVIGATION */
+
+  nav {
+    background-color: #fff9ee;
+    padding: 1rem;
+    text-align: center;
+    }
+
+  nav li {
+    margin: 0 auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: inline-block;
+  }
+  
+  nav a {
+      text-decoration: underline;
+      color: #2f0505;
+      font-family: 'Lora', serif;
+      font-weight: 400;
+  }
+
+  nav a.selected {
+    font-family: 'Lora', serif  ;
+    font-weight: 700;
+    text-decoration: none ;
+  }  
+
+  /* MAIN */
+
+  main{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+  /* BOX DESIGN */
+  
+  .section {
+    margin: 1%;
+    width: 48%;
+    vertical-align: top;
+    display: inline-block;
+    }
+
+  .section:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  
+  
+  /* MAIN FORSIDA */
+
+  .border {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: solid 2px #ffe7ae;
+  }
+
+  .vinsrett {
+    margin-left: 1%;
+  }
+
+  .timi {
+    padding-bottom: 1rem;
+  }
+
+  .matedapant{
+    padding-bottom: 1rem;
+  }
+
+  .matedapant a {
+    font-weight: 400;
+  }
+
+  /* UM SIDA MAIN */    
+
+  img {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  h2 {
+    padding-bottom: 1rem;
+  }
+
+  .texti {
+    padding-bottom: 1rem;
+  }
+
+  /* MATSEDILL SIDA */
+
+
+  .title {
+    color: black; 
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .matur td  {
+    padding: 0.5rem;
+    margin: 0;
+    text-align: left;
+  }
+
+  .matur th {
+    padding: 0.5rem;
+  }
+
+  table {
+    width: 100%;
+    margin: 0 auto;
+    border-spacing: 0;
+    padding: 1rem;
+  }
+
+  .litur {
+    background-color: #ffe7ae;
+  }
+
+  /* PONTUNARSIDA */
+
+  fieldset {
+    border: solid 1px #ffe7ae;
+    padding-left: 1rem;
+  }
+
+  legend {
+    font-weight: 700;
+  }
+
+  input, select{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  button {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* FOOTER */
+
+  footer {
+    background-color: #2f0505;
+    color: #fff1cf ;
+    border-top: 8px solid #ffe7ae;
+    padding-top: 0.5rem;
+    text-align: center;
+  }
+
+  .footer {
+    color: #fff1cf;
+  }
+
+  footer dt {
+    font-weight: 700;
+  }
+
+  /* hjálpar class sem felur sjónrænt en skjálesarar lesa */
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
